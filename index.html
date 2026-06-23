@@ -367,6 +367,74 @@
       <button class="btn-cta-secondary" onclick="scrollToId('prijzen')">Bekijk de prijzen</button>
     </div>
   </section>
+  <hr class="divider">
+
+<section class="faq" style="padding: 4rem 2rem; max-width: 680px; margin: 0 auto;">
+  <div style="margin-bottom: 2.5rem;">
+    <h2 style="font-size: 26px; font-weight: 500; letter-spacing: -0.5px; margin-bottom: 0.5rem;">Veelgestelde vragen</h2>
+    <p style="font-size: 15px; color: #666;">Staat jouw vraag er niet bij? Mail ons op <a href="mailto:hallo@trunch.nl" style="color: #2563eb; text-decoration: none;">hallo@trunch.nl</a></p>
+  </div>
+
+  <style>
+    .faq-item { border-top: 0.5px solid #e5e5e5; }
+    .faq-item:last-child { border-bottom: 0.5px solid #e5e5e5; }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.1rem 0; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; text-align: left; font-family: inherit; }
+    .faq-question span { font-size: 15px; font-weight: 500; color: #1a1a1a; line-height: 1.4; }
+    .faq-icon { font-size: 18px; color: #2563eb; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { font-size: 14px; color: #555; line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.2s; padding-bottom: 0; }
+    .faq-item.open .faq-answer { max-height: 300px; padding-bottom: 1.1rem; }
+  </style>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="faqToggle(this)">
+      <span>Verschijnt mijn privéadres écht nergens?</span>
+      <i class="ti ti-plus faq-icon" aria-hidden="true"></i>
+    </button>
+    <div class="faq-answer">Ja. Zodra je je trunch adres gebruikt, staat uitsluitend ons vestigingsadres in het Handelsregister van de KvK én op commerciële opzoeksites. Jouw thuisadres is op niet zichtbaar — ook niet voor derden die een uittreksel opvragen. Als je eerder wel al je huisadres hebt gebruikt, kunnen derden in sommige gevallen tegen betaling wel historische addressen opvragen.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="faqToggle(this)">
+      <span>Op welk adres kan ik mij inschrijven?</span>
+      <i class="ti ti-plus faq-icon" aria-hidden="true"></i>
+    </button>
+    <div class="faq-answer">Op dit moment hebben we één vestigingsadres in Amsterdam. We zijn actief bezig met het uitbreiden naar meerdere steden in Nederland — inschrijvers op de waitlist worden als eerste op de hoogte gesteld van nieuwe locaties.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="faqToggle(this)">
+      <span>Wat gebeurt er met mijn post?</span>
+      <i class="ti ti-plus faq-icon" aria-hidden="true"></i>
+    </button>
+    <div class="faq-answer">Alle post die binnenkomt op jouw trunch-adres wordt gescand en veilig digitaal doorgestuurd naar jou. Wil je het origineel ontvangen? Dan sturen we het fysiek door op verzoek. Post die je niet nodig hebt vernietigen we veilig voor je.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="faqToggle(this)">
+      <span>Wat als ik privé verhuis of mijn bedrijfsstructuur verandert?</span>
+      <i class="ti ti-plus faq-icon" aria-hidden="true"></i>
+    </button>
+    <div class="faq-answer">Niets. Dat is precies het voordeel van trunch. Of je nu verhuist, aandeelhouders wisselen, of je bedrijfsvorm verandert — jouw KvK-adres blijft ongewijzigd staan. Geen gedoe met adreswijzigingen bij de notaris of de KvK.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="faqToggle(this)">
+      <span>Kan ik op elk moment opzeggen?</span>
+      <i class="ti ti-plus faq-icon" aria-hidden="true"></i>
+    </button>
+    <div class="faq-answer">Ja. Bij een maandelijks abonnement kun je per maand opzeggen. Bij een jaarlijks abonnement geldt een opzegtermijn aan het einde van de contractperiode. Er zijn geen verborgen kosten of boetes.</div>
+  </div>
+
+  <script>
+    function faqToggle(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+</section>
 
 </div><!-- /page-home -->
 
