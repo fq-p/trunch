@@ -35,6 +35,15 @@
     .btn-secondary { background: #2563eb; color: #fff; border: none; padding: 12px 24px; border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; }
     .btn-secondary:hover { background: #1d4ed8; }
 
+    /* Value props */
+    .value-props { padding: 0 2rem 3.5rem; max-width: 860px; margin: 0 auto; }
+    .vp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; border-radius: 12px; overflow: hidden; }
+    .vp { background: #fff; padding: 1.75rem 1.5rem; }
+    .vp-icon { font-size: 22px; color: #2563eb; margin-bottom: 0.9rem; }
+    .vp h3 { font-size: 14px; font-weight: 500; margin-bottom: 0.4rem; line-height: 1.3; }
+    .vp p { font-size: 13px; color: #666; line-height: 1.6; }
+    @media (max-width: 600px) { .vp-grid { grid-template-columns: 1fr; } }
+
     /* Divider */
     .divider { border: none; border-top: 0.5px solid #e5e5e5; margin: 0 2rem; }
 
@@ -178,6 +187,26 @@
     <div class="hero-actions">
       <button class="btn-primary" onclick="showPage('waitlist')">Schrijf je bedrijf in</button>
       <button class="btn-secondary" onclick="scrollToId('hoe-het-werkt')">Bekijk hoe het werkt</button>
+    </div>
+  </section>
+
+  <section class="value-props">
+    <div class="vp-grid">
+      <div class="vp">
+        <div class="vp-icon"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
+        <h3>Jouw adres, jouw privacy</h3>
+        <p>Jouw thuisadres verschijnt niet in het Handelsregister. Nooit.</p>
+      </div>
+      <div class="vp">
+        <div class="vp-icon"><i class="ti ti-refresh" aria-hidden="true"></i></div>
+        <h3>Stabiel, wat er ook verandert</h3>
+        <p>Verhuis je privé? Wisselen aandeelhouders? Jouw KVK-adres blijft gewoon staan.</p>
+      </div>
+      <div class="vp">
+        <div class="vp-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
+        <h3>Een adres om trots op te zijn</h3>
+        <p>Geen woonwijk in je inschrijving, maar een professioneel zakelijk adres.</p>
+      </div>
     </div>
   </section>
 
