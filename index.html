@@ -237,7 +237,7 @@
 
   <section class="features">
     <h2>Alles wat je nodig hebt om zakelijk ingeschreven te staan — zonder je thuis bloot te geven.</h2>
-    <p>Speciaal voor zzp'ers, BV's of bedrijven met veel post.</p>
+    <p>Speciaal voor zzp'ers, BV's, stichtingen en verenigingen.</p>
     <div class="feat-grid">
       <div class="feat">
         <div class="feat-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
@@ -250,7 +250,7 @@
         <div class="feat-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
         <div>
           <h3>Postverwerking & scannen</h3>
-          <p>Wij ontvangen, scannen en sturen je officiële post door — zodat je niets mist of post moet halen.</p>
+          <p>Wij ontvangen, scannen en sturen je post door — zodat je niets mist of post moet halen.</p>
         </div>
       </div>
       <div class="feat">
@@ -273,6 +273,13 @@
           <h3>Binnen enkele minuten geregeld</h3>
           <p>Schrijf je online in en gebruik dezelfde dag nog je adres.</p>
         </div>
+         <div class="feat">
+        <div class="feat-icon"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
+        <div>
+          <h3>Post doorsturen</h3>
+          <p>Ontvang je liever de originele poststukken thuis? Dat kan ook! Op verzoek sturen we ze door.</p>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -297,7 +304,7 @@
     <div class="cards">
       <div class="card">
         <h3>Solo</h3>
-        <p class="desc">Voor zzp'ers en eenmanszaken die hun privéadres uit het KVK willen houden.</p>
+        <p class="desc">Voor ondernemers of oprichters die hun privéadres uit de KvK willen houden.</p>
         <div class="price-row">
           <span class="price-amount" id="price-solo">€23</span>
           <span class="price-suffix">/ maand</span>
@@ -305,9 +312,9 @@
         <p class="price-note" id="note-solo">Jaarlijks gefactureerd — €276 per jaar</p>
         <div class="divider-sm"></div>
         <ul class="features-list">
-          <li><i class="ti ti-check" aria-hidden="true"></i> Officieel KVK vestigingsadres</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i> Officieel KvK vestigingsadres</li>
           <li><i class="ti ti-check" aria-hidden="true"></i> Tot 10 poststukken per maand gedigitaliseerd</li>
-          <li><i class="ti ti-check" aria-hidden="true"></i> Digitale doorstuur per e-mail</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i> Gratis vernietiging, fysiek doorsturen tegen meerprijs</li>
           <li><i class="ti ti-check" aria-hidden="true"></i> Online dashboard</li>
         </ul>
         <button class="btn-plan dark" onclick="showPage('waitlist')">Aan de slag</button>
@@ -473,10 +480,10 @@
     const yearly = toggle.checked;
     labelYearly.classList.toggle('active', yearly);
     labelMonthly.classList.toggle('active', !yearly);
-    document.getElementById('price-solo').textContent = yearly ? '€23' : '€29';
-    document.getElementById('note-solo').textContent = yearly ? 'Jaarlijks gefactureerd — €276 per jaar' : 'Maandelijks opzegbaar';
+    document.getElementById('price-solo').textContent = yearly ? '€14' : '€19';
+    document.getElementById('note-solo').textContent = yearly ? 'Jaarlijks gefactureerd: €60 korting per jaar' : 'Maandelijks opzegbaar';
     document.getElementById('price-pro').textContent = yearly ? '€49' : '€59';
-    document.getElementById('note-pro').textContent = yearly ? 'Jaarlijks gefactureerd — €588 per jaar' : 'Maandelijks opzegbaar';
+    document.getElementById('note-pro').textContent = yearly ? 'Jaarlijks gefactureerd: €120 korting per jaar' : 'Maandelijks opzegbaar';
   }
 
   toggle.addEventListener('change', updatePricing);
