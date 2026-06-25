@@ -52,7 +52,12 @@ Voor zzp'ers en eenmanszaken die hun privéadres afschermen KvK willen is een ve
 trunch biedt precies dat: een officieel vestigingsadres, postverwerking en volledige privacy. Nu in Amsterdam, binnenkort meer steden.</p>
   </article>
 
-  <footer><!-- zelfde footer als index.html --></footer>
-
+<div id="footer"></div>
+<script>
+  fetch('../footer.html').then(r => r.text()).then(html => {
+    document.getElementById('footer').innerHTML = html;
+  });
+</script>
+  
 </body>
 </html>
