@@ -11,15 +11,13 @@
 </head>
 <body>
 
-<nav class="nav">
-  <img src="trunch_logo.png" alt="trunch" height="28" onclick="showPage('home')" style="cursor:pointer;">
-  <div class="nav-links">
-    <a href="#" onclick="showPage('home'); scrollToId('hoe-het-werkt'); return false;">Hoe het werkt</a>
-    <a href="#" onclick="showPage('home'); scrollToId('prijzen'); return false;">Prijzen</a>
-    <a href="#" onclick="showPage('home'); scrollToId('faq-item'); return false;">FAQ</a>
-    <button class="nav-cta" onclick="showPage('waitlist')">Aan de slag</button>
-  </div>
-</nav>
+<div id="nav"></div>
+<script>
+  fetch('../nav.html').then(r => r.text()).then(html => {
+    document.getElementById('nav').innerHTML = html;
+  });
+</script>
+  
 <a href="index.html" style="display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:8px; border:0.5px solid #e5e5e5; color:#666; text-decoration:none; margin: 1.5rem 2rem 0;" onmouseover="this.style.borderColor='#2563eb';this.style.color='#2563eb'" onmouseout="this.style.borderColor='#e5e5e5';this.style.color='#666'">
   <i class="ti ti-arrow-left" aria-hidden="true"></i>
 </a>
