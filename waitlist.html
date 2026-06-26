@@ -97,5 +97,26 @@
     document.getElementById('footer').innerHTML = html;
   });
 </script>
+  <script>
+async function handleJoin() {
+  const input = document.getElementById('email-input');
+  const val = input.value.trim();
+  if (!val || !val.includes('@')) {
+    input.style.borderColor = '#ef4444';
+    input.focus();
+    setTimeout(() => input.style.borderColor = '', 1500);
+    return;
+  }
+  const res = await fetch('https://formspree.io/f/mzdlralk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: val })
+  });
+  if (res.ok) {
+    document.getElementById('wl-form-row').style.display = 'none';
+    document.getElementById('wl-success').style.display = 'flex';
+  }
+}
+</script>
   </body>
 </html>
