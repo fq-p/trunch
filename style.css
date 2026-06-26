@@ -146,6 +146,21 @@
     .footer-links a { font-size: 13px; color: #999; text-decoration: none; }
     .footer-links a:hover { color: #1a1a1a; }
 
+    /* Blog article */
+    .article-wrap { max-width: 640px; margin: 0 auto; padding: 0 2rem 4rem; }
+    .article-wrap .article-eyebrow { font-size: 11px; font-weight: 500; color: #2563eb; text-transform: uppercase; letter-spacing: 0.8px; display: block; margin-bottom: 0.75rem; }
+    .article-wrap h1 { font-size: 32px; font-weight: 500; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 0.75rem; }
+    .article-wrap .article-meta { font-size: 13px; color: #999; margin-bottom: 2rem; }
+    .article-wrap img { width: 100%; height: 260px; object-fit: cover; border-radius: 12px; margin-bottom: 2.5rem; display: block; }
+    .article-wrap p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 1.25rem; }
+    .article-wrap h2 { font-size: 20px; font-weight: 500; color: #1a1a1a; margin: 2rem 0 0.75rem; letter-spacing: -0.3px; }
+    .article-wrap h3 { font-size: 17px; font-weight: 500; color: #1a1a1a; margin: 1.5rem 0 0.5rem; }
+    .article-wrap ul, .article-wrap ol { padding-left: 1.25rem; margin-bottom: 1.25rem; }
+    .article-wrap li { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 0.4rem; }
+    .article-wrap a { color: #2563eb; text-decoration: none; }
+    .article-wrap a:hover { text-decoration: underline; }
+    .article-wrap strong { font-weight: 500; color: #1a1a1a; }
+
     @media (max-width: 600px) {
       .nav-links a { display: none; }
       .hero h1 { font-size: 30px; }
