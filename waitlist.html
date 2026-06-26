@@ -26,7 +26,7 @@
     <p class="sub">trunch is bijna live. Schrijf je in en ontvang als eerste toegang, plus een exclusieve vroegboekkorting bij lancering.</p>
 
     <div class="form-row" id="wl-form-row">
-      <input type="email" id="email-input" placeholder="jouw@emailadres.nl" autocomplete="email">
+      <input type="email" id="email-input" placeholder="jouw@emailadres.nl" autocomplete="email" onkeydown="if(event.key==='Enter') handleJoin()">
       <button class="btn-join" onclick="handleJoin()">Zet me op de lijst</button>
     </div>
     <div class="success-msg" id="wl-success">
