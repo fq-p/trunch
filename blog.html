@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — trunch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="nav"></div>
+<script>
+  fetch('nav.html').then(r => r.text()).then(html => {
+    document.getElementById('nav').innerHTML = html;
+  });
+</script>
+
+<div style="max-width: 860px; margin: 0 auto; padding: 4rem 2rem 2.5rem;">
+  <h1 style="font-size: 32px; font-weight: 500; letter-spacing: -0.5px; margin-bottom: 0.5rem;">Blog</h1>
+  <p style="font-size: 15px; color: #666;">Praktische informatie voor ondernemers over privacy, inschrijvingen en zakelijk ondernemen.</p>
+</div>
+
+<hr class="divider">
+
+<div style="max-width: 860px; margin: 0 auto; padding: 2.5rem 2rem 4rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem;">
+
+  <a href="thuisadres-kvk.html" style="text-decoration: none; color: inherit; border: 0.5px solid #e5e5e5; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.15s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#e5e5e5'">
+    <img src="privacy_image.jpg" alt="..." style="width:100%;height:160px;object-fit:cover;display:block;">
+    <div style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; flex: 1;">
+      <span style="font-size: 11px; font-weight: 500; color: #2563eb; text-transform: uppercase; letter-spacing: 0.8px;">Privacy</span>
+      <h2 style="font-size: 15px; font-weight: 500; line-height: 1.4; color: #1a1a1a;">Waarom staat jouw thuisadres in het KVK — en wat kun je eraan doen?</h2>
+      <p style="font-size: 13px; color: #666; line-height: 1.6; flex: 1;">Veel ondernemers weten niet dat hun woonadres standaard zichtbaar is in het Handelsregister.</p>
+      <span style="font-size: 12px; color: #999;">3 min leestijd</span>
+    </div>
+  </a>
+
+  <a href="verhuizing.html" style="text-decoration: none; color: inherit; border: 0.5px solid #e5e5e5; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.15s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#e5e5e5'">
+      <img src="moving_image.jpg" alt="..." style="width:100%;height:160px;object-fit:cover;display:block;">
+    <div style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; flex: 1;">
+      <span style="font-size: 11px; font-weight: 500; color: #2563eb; text-transform: uppercase; letter-spacing: 0.8px;">Veiligheid</span>
+      <h2 style="font-size: 15px; font-weight: 500; line-height: 1.4; color: #1a1a1a;">Wat verandert er aan je KvK inschrijving als je verhuist?</h2>
+      <p style="font-size: 13px; color: #666; line-height: 1.6; flex: 1;">Privé verhuizen als ondernemer brengt meer administratie met zich mee dan je denkt.</p>
+      <span style="font-size: 12px; color: #999;">3 min leestijd</span>
+    </div>
+  </a>
+
+  <a href="huis.html" style="text-decoration: none; color: inherit; border: 0.5px solid #e5e5e5; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.15s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#e5e5e5'">
+    <img src="home_image.jpg" alt="..." style="width:100%;height:160px;object-fit:cover;display:block;">
+    <div style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; flex: 1;">
+      <span style="font-size: 11px; font-weight: 500; color: #2563eb; text-transform: uppercase; letter-spacing: 0.8px;">Inschrijving</span>
+      <h2 style="font-size: 15px; font-weight: 500; line-height: 1.4; color: #1a1a1a;">Zzp'er vanuit huis: zo houd je privé en zakelijk écht gescheiden</h2>
+      <p style="font-size: 13px; color: #666; line-height: 1.6; flex: 1;">Voordat je het doorhebt lopen zakelijk en privé overal door elkaar.</p>
+      <span style="font-size: 12px; color: #999;">2 min leestijd</span>
+    </div>
+  </a>
+
+</div>
+
+<div id="footer"></div>
+<script>
+  fetch('footer.html').then(r => r.text()).then(html => {
+    document.getElementById('footer').innerHTML = html;
+  });
+</script>
+
+</body>
+</html>
