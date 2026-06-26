@@ -14,6 +14,7 @@
     .nav-links a:hover { color: #1a1a1a; }
     .nav-cta { font-size: 14px; font-weight: 500; background: #2563eb; color: #fff; border: none; padding: 8px 18px; border-radius: 8px; cursor: pointer; font-family: inherit; }
     .nav-cta:hover { background: #1d4ed8; }
+    a.nav-cta { text-decoration: none; }
 
     /* Hero */
     .hero { padding: 5rem 2rem 4rem; max-width: 640px; margin: 0 auto; text-align: center; }
