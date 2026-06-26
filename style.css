@@ -160,9 +160,6 @@
     .article-wrap a { color: #2563eb; text-decoration: none; }
     .article-wrap a:hover { text-decoration: underline; }
     .article-wrap strong { font-weight: 500; color: #1a1a1a; }
-    .article p { color: #666 }
-    .article h2 { color: #666 }
-    .article h3 { color: #666 }
 
     @media (max-width: 600px) {
       .nav-links a { display: none; }
